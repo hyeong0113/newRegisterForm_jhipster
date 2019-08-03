@@ -1,0 +1,20 @@
+{
+  "newRegisterFormApp": {
+    "Province": {
+      "null": "",
+      "Alberta": "Alberta",
+      "BritishColumbia": "BritishColumbia",
+      "Manitoba": "Manitoba",
+      "NewBrunswick": "NewBrunswick",
+      "NewfoundlandAndLabrador": "NewfoundlandAndLabrador",
+      "NovaScotia": "NovaScotia",
+      "NorthwestTerritories": "NorthwestTerritories",
+      "Nunavut": "Nunavut",
+      "Ontario": "Ontario",
+      "PrinceEdwardIsland": "PrinceEdwardIsland",
+      "Quebec": "Quebec",
+      "Saskatchewan": "Saskatchewan",
+      "Yukon": "Yukon"
+    }
+  }
+}

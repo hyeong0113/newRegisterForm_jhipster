@@ -1,0 +1,164 @@
+{
+    "name": "RegisterMember",
+    "fields": [
+        {
+            "fieldName": "previousRegister",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "korName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "engName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "birthday",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "gender",
+            "fieldType": "Gender",
+            "fieldValues": "Male,Female,Other",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "firstStreet",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "secondStreet",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "city",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "province",
+            "fieldType": "Province",
+            "fieldValues": "Alberta,BritishColumbia,Manitoba,NewBrunswick,NewfoundlandAndLabrador,NovaScotia,NorthwestTerritories,Nunavut,Ontario,PrinceEdwardIsland,Quebec,Saskatchewan,Yukon",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "postalCode",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "cellPhone",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "residentialPhone",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "emailAddress",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "profession",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "companyName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "firstLicenseplate",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "secondLicenseplate",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "immigrationStatus",
+            "fieldType": "ImmigrationStatus",
+            "fieldValues": "Citizen,PermanentResidence,Visitor,StudyPermit,WorkPermit,WorkingHoliday",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "baptismType",
+            "fieldType": "Baptism",
+            "fieldValues": "None,InfantBaptism,Baptism,Confirmation"
+        },
+        {
+            "fieldName": "baptismYear",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "baptismChurch",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dutyStatus",
+            "fieldType": "DutyStatus",
+            "fieldValues": "None,GeneralServant,Deacon,OrdainedDeacon,Elder,InternPastor,Missionary,Paster,PasterWife"
+        },
+        {
+            "fieldName": "prevChurch",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "instructor",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "volunteer",
+            "fieldType": "Volunteer",
+            "fieldValues": "FrontDesk,Choir,Kitchen,EnglishMissionaryTeacher,KoreanMissionaryTeacher,Intercession,Propagation,IT,Broadcast,SeniorMinistry,Administration,Praise,Parking,FinancialManagement,FacilityManeger,Gardening,Design,ETC"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "familyMember",
+            "otherEntityRelationshipName": "registerMember",
+            "relationshipName": "familyMember"
+        }
+    ],
+    "changelogDate": "20190727225546",
+    "entityTableName": "register_member",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

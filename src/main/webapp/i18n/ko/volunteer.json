@@ -1,0 +1,25 @@
+{
+  "newRegisterFormApp": {
+    "Volunteer": {
+      "null": "",
+      "FrontDesk": "FrontDesk",
+      "Choir": "Choir",
+      "Kitchen": "Kitchen",
+      "EnglishMissionaryTeacher": "EnglishMissionaryTeacher",
+      "KoreanMissionaryTeacher": "KoreanMissionaryTeacher",
+      "Intercession": "Intercession",
+      "Propagation": "Propagation",
+      "IT": "IT",
+      "Broadcast": "Broadcast",
+      "SeniorMinistry": "SeniorMinistry",
+      "Administration": "Administration",
+      "Praise": "Praise",
+      "Parking": "Parking",
+      "FinancialManagement": "FinancialManagement",
+      "FacilityManeger": "FacilityManeger",
+      "Gardening": "Gardening",
+      "Design": "Design",
+      "ETC": "ETC"
+    }
+  }
+}

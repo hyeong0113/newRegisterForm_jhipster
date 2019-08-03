@@ -1,0 +1,110 @@
+{
+    "name": "FamilyMember",
+    "fields": [
+        {
+            "fieldName": "relationStatus",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "previousRegister",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "korName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "engName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "birthday",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "gender",
+            "fieldType": "Gender",
+            "fieldValues": "Male,Female,Other",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "profession",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "companyName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cellPhone",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "emailAddress",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "churchServed",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "yearServed",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dutyStatus",
+            "fieldType": "DutyStatus",
+            "fieldValues": "None,GeneralServant,Deacon,OrdainedDeacon,Elder,InternPastor,Missionary,Paster,PasterWife"
+        },
+        {
+            "fieldName": "prevChurch",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "volunteer",
+            "fieldType": "Volunteer",
+            "fieldValues": "FrontDesk,Choir,Kitchen,EnglishMissionaryTeacher,KoreanMissionaryTeacher,Intercession,Propagation,IT,Broadcast,SeniorMinistry,Administration,Praise,Parking,FinancialManagement,FacilityManeger,Gardening,Design,ETC"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "registerMember",
+            "otherEntityRelationshipName": "familyMember",
+            "relationshipName": "registerMember",
+            "otherEntityField": "korName"
+        }
+    ],
+    "changelogDate": "20190727225547",
+    "entityTableName": "family_member",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

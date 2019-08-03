@@ -1,0 +1,11 @@
+{
+  "newRegisterFormApp": {
+    "Baptism": {
+      "null": "",
+      "None": "None",
+      "InfantBaptism": "InfantBaptism",
+      "Baptism": "Baptism",
+      "Confirmation": "Confirmation"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "createFormApp": {
+    "createMember": {
+      "home": {
+        "title": "Listed Members",
+        "createLabel": "Create New Member",
+        "createOrEditLabel": "Create or edit a Registered Member",
+        "notFound": "No Register Member found"
+      },
+      "created": "A new Register Member is created with identifier {{ param }}",
+      "updated": "A Register Member is updated with identifier {{ param }}",
+      "deleted": "A Register Member is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Register Member {{ id }}?"
+      },
+      "detail": {
+        "title": "Register Member"
+      },
+      "previousRegister": "Previous Register",
+      "korName": "Kor Name",
+      "engName": "Eng Name",
+      "birthday": "Birthday",
+      "gender": "Gender",
+      "firstStreet": "First Street",
+      "secondStreet": "Second Street",
+      "city": "City",
+      "province": "Province",
+      "postalCode": "Postal Code",
+      "cellPhone": "Cell Phone",
+      "residentialPhone": "Residential Phone",
+      "emailAddress": "Email Address",
+      "profession": "Profession",
+      "companyName": "Company Name",
+      "firstLicenseplate": "First Licenseplate",
+      "secondLicenseplate": "Second Licenseplate",
+      "immigrationStatus": "Immigration Status",
+      "baptismType": "Baptism Type",
+      "baptismYear": "Baptism Year",
+      "baptismChurch": "Baptism Church",
+      "dutyStatus": "Duty Status",
+      "prevChurch": "Prev Church",
+      "instructor": "Instructor",
+      "volunteer": "Volunteer",
+      "familyMember": "Family Member"
+    }
+  }
+}

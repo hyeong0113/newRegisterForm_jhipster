@@ -1,0 +1,13 @@
+{
+  "newRegisterFormApp": {
+    "ImmigrationStatus": {
+      "null": "",
+      "Citizen": "Citizen",
+      "PermanentResidence": "PermanentResidence",
+      "Visitor": "Visitor",
+      "StudyPermit": "StudyPermit",
+      "WorkPermit": "WorkPermit",
+      "WorkingHoliday": "WorkingHoliday"
+    }
+  }
+}

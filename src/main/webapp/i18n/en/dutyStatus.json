@@ -1,0 +1,16 @@
+{
+  "newRegisterFormApp": {
+    "DutyStatus": {
+      "null": "",
+      "None": "None",
+      "GeneralServant": "GeneralServant",
+      "Deacon": "Deacon",
+      "OrdainedDeacon": "OrdainedDeacon",
+      "Elder": "Elder",
+      "InternPastor": "InternPastor",
+      "Missionary": "Missionary",
+      "Paster": "Paster",
+      "PasterWife": "PasterWife"
+    }
+  }
+}
