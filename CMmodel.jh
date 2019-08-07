@@ -1,0 +1,68 @@
+entity Ministry {
+	name String required,
+    startDate LocalDate required,
+    endDate LocalDate required
+}
+
+entity Pastor {
+	coreID Integer required,
+	name String required
+}
+
+entity Department {
+	name String required,
+    serviceType String required
+}
+
+entity Room {
+	name String required
+}
+
+entity ClassType {
+	name String required
+}
+
+entity Student {
+	coreID Integer required,
+    name String required,
+	school String,
+    grade String,
+    note String,
+	allergy String,
+}
+
+entity Teacher {
+	coreID Integer required,
+    name String required
+}
+
+entity Role {
+	name String
+}
+
+entity Attendance {
+	note String,
+    attend Boolean,
+    date LocalDate
+}
+relationship OneToMany {
+	Pastor{ministry(name)} to Ministry{pastor(name)},
+    Ministry{department} to Department{ministry(name)},
+    Department{classType} to ClassType{department(name)}
+}
+
+relationship OneToMany {
+    ClassType{attendance} to Attendance{classType(name)},
+    Student{attendance} to  Attendance{student(name)}
+}
+
+relationship OneToOne {
+	Department{pastor(name)} to Pastor{department(name)},
+    Department{room(name)} to Room{department},
+}
+
+relationship ManyToMany {
+	ClassType{teacher(name)} to Teacher{classType(name)},
+    Teacher{role(name)} to Role{teacher},
+    ClassType{student(name)} to Student{classType(name)}
+}
